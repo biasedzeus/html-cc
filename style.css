@@ -1,4 +1,4 @@
-table,td,tr,th{
+table,td,tr,th,caption{
     border: 2px solid black;
     padding: .5rem;
     border-collapse: collapse;

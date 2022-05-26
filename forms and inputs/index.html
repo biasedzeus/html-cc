@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="top">
         <ul>
             <li>Home</li>
             <li>About</li>
@@ -91,6 +91,14 @@
 
                 </p>
                 <p>
+                    <label for="email">
+                        Email:
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com:"
+                            autocomplete="on" required>
+                    </label>
+
+                </p>
+                <p>
                     <label for="password">
                         Password :
                         <input type="password" name="password" id="password" placeholder="enter password here:"
@@ -114,6 +122,7 @@
                     <label for="decade">
                         Favourite Decade:
                         <input type="number" name="decade" id="decade" placeholder="enter decade here:" min="1920"
+                        value="1970"
                             max="2022" step="10" required>
                     </label>
 
@@ -182,10 +191,33 @@
                  <label for="birds">Birds</label>
              </p>
          </fieldset>
+         <fieldset>
+             <legend>Send Me a Message</legend>
+             <label for="message">Message:</label>
+             <textarea 
+             name="message" 
+             id="message" 
+             cols="30" 
+             rows="10"
+             placeholder="enter message here:"
+             ></textarea>
+         </fieldset>
+
+         <button type="submit">Submit Form</button>
+         <button type="submit"
+         formaction="https://httpbin.org/post"
+         formmethod="post"
+         >Post</button>
+         <button type="reset" >Reset Form</button>
+
+         
             </form>
 
         </article>
     </main>
+
+
+    <a href="#top">Back 2 Top</a>
 
 </body>
 

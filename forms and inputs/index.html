@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styled.css">
+    <script src="script.js" defer></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li> <a href="#contact">Contact</a> </li>
+        </ul>
+    </nav>
+    <h1>Signup Forms</h1>
+    <main>
+        <article id="mainpage">
+            <figure>
+                <img src="./landscape.jpg" width="100%" alt="" srcset="">
+            </figure>
+
+        </article>
+
+        <article id="About">
+            <h2>About me</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum debitis optio odit nulla est
+                asperiores perspiciatis. Quae commodi odit distinctio dolorem, perferendis totam veritatis sint delectus
+                corporis. Error, eligendi?
+                Tenetur ducimus asperiores aliquam labore, delectus ipsum soluta optio! Blanditiis provident placeat
+                quis sunt a eius maiores cupiditate facere obcaecati architecto. Rem explicabo quidem ex odio
+                necessitatibus commodi, voluptas cumque.
+                Incidunt omnis exercitationem, architecto voluptate distinctio animi reprehenderit sint. Tempore
+                architecto deleniti consequuntur dolores nam aut ipsum omnis quo, enim ratione porro voluptatum. Eos
+                libero velit voluptatibus porro itaque? Vel!
+                Maiores tempore omnis laboriosam quos beatae facilis, et nam molestiae magnam, aperiam dignissimos magni
+                cupiditate repellat inventore vitae in neque, harum eius quas rerum? Animi amet optio at illo officia?
+                Consequatur illum esse delectus, ipsum, natus dolores corrupti, beatae blanditiis velit ratione ea atque
+                nostrum quae eius ipsa ducimus? Vero, minus adipisci ipsam aliquid modi perspiciatis ad alias aut sit.
+                Tempore consequuntur eum voluptatum architecto fuga magnam illo assumenda, a ad nostrum consequatur
+                suscipit, optio quia eos officiis molestias expedita mollitia praesentium odit saepe quasi incidunt
+                ipsam quis accusantium! Libero!
+                Suscipit facere sint numquam optio quaerat repellendus rerum vero atque, labore molestiae sunt accusamus
+                excepturi assumenda nostrum amet ducimus rem. Rerum voluptatem nihil a voluptates vero, dolore ducimus
+                fuga dicta.
+                Optio exercitationem reprehenderit dolorem. Reprehenderit blanditiis nam, est labore qui magni velit
+                aspernatur deserunt ipsam iure tenetur placeat deleniti sunt ipsum ab architecto laborum? Ipsum odio
+                fuga placeat exercitationem impedit.
+                Rem omnis sed aliquam obcaecati magnam itaque culpa assumenda veniam dolor harum ipsum iste quisquam
+                suscipit error amet earum reprehenderit soluta, repudiandae ipsam atque? Perspiciatis natus quae omnis
+                quia a.
+                Voluptatibus asperiores in reiciendis dolorem distinctio tempora perspiciatis obcaecati tempore,
+                mollitia laboriosam, repellendus vero quas odio optio nulla quaerat dolores consectetur rerum!
+                Laudantium praesentium, reprehenderit dicta harum reiciendis omnis adipisci?
+            </p>
+        </article>
+
+        <article id="contact">
+            <h2>Contact me</h2>
+            <p>Looking forward to hear from you</p>
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="firstName">
+                        firstname:
+                        <input type="text" name="firstName" id="firstName" placeholder="enter firstname here:"
+                            autocomplete="on" required>
+                    </label>
+                </p>
+                <!-- autofocus can be used to go to a part of html where you want
+            to load your page first -->
+                <p>
+                    <label for="lastName">
+                        Last name:
+                        <input type="text" name="lastName" id="lastName" placeholder="enter lastname here:"
+                            autocomplete="on" required>
+                    </label>
+
+                </p>
+                <p>
+                    <label for="password">
+                        Password :
+                        <input type="password" name="password" id="password" placeholder="enter password here:"
+                            required>
+                    </label>
+                    <br>
+                    <label for="checkbox">Show Passsord
+                        <input type="checkbox" name="showpass" id="showpass" onclick="togglePassword()">
+                    </label>
+
+                </p>
+                <p>
+                    <label for="phone">
+                        Mobile Number :
+                        <input type="tel" name="phone" id="phone" placeholder="enter phone here:"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </label>
+
+                </p>
+                <p>
+                    <label for="decade">
+                        Favourite Decade:
+                        <input type="number" name="decade" id="decade" placeholder="enter decade here:" min="1920"
+                            max="2022" step="10" required>
+                    </label>
+
+                </p>
+                <p>
+                    <label for="Coffee">Favourite coffee:</label>
+                    <select name="coffee" id="coffee" multiple size="6">
+                        <optgroup label="Coffees">
+                            <option value="regularCoffee">regular coffee</option>
+                            <option value="icedCoffee">Iced coffee</option>
+                            <option value="latte" selected>Latte coffee</option>
+                
+                        </optgroup>
+                        <optgroup label="Hot Coffees">
+                            <option value="blackCoffee">Black coffee</option>
+                            <option value="hotCoffee">Hot coffee</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+
+  <!--  another way to make options  -->
+  <P>
+      <label for="coffee">Fav tea:</label>
+      <input type="text" name="tea" id="tea" list="tea-list">
+      <datalist id="tea-list" >
+          <option value="assamese chai">
+          <option value="masala chai">
+          <option value="elaichi chai">
+          <option value="strong chai">
+          <option value="herbal chai">
+          <option value="ginger tea" selected>
+
+      </datalist>
+  </P>
+
+            </form>
+
+        </article>
+    </main>
+
+</body>
+
+</html>
